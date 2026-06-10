@@ -9,8 +9,7 @@ scikit-learn, and deployed on Streamlit Cloud.
 |-----------|--------|
 | Accuracy | 77.1% |
 | F1 Score | 0.78 |
-![Confusion Matrix](<img width="900" height="750" alt="image" src="https://github.com/user-attachments/assets/1676762f-e5df-4400-a0f8-10997be76ee2" />
-)
+![Confusion Matrix](src/confusion_matrix.png)
 ## Tech Stack
 - Python, pandas, scikit-learn
 - TF-IDF vectorisation (5000 features, bigrams)
@@ -27,18 +26,21 @@ git clone https://github.com/YOUR_USERNAME/personality-detection
 cd personality-detection
 pip install -r requirements.txt
 python src/train.py # trains and saves model
-streamlit run app.py # launches web app
+streamlit run src/app.py # launches web app
 ```
 ## Project Structure
 ```
 personality-detection/
- app.py # Streamlit app
- src/
-|  preprocess.py # text cleaning
-|  train.py # model training + metrics
- data/
-|  model.pkl
-|  vectorizer.pkl
-|  confusion_matrix.png
- requirements.txt
+```text
+personality-detection/
+├── src/
+│   ├── app.py
+│   ├── preprocess.py
+│   ├── train.py
+│   ├── model.pkl
+│   ├── vectorizer.pkl
+│   └── confusion_matrix.png
+├── requirements.txt
+└── mbti_1.csv
+```
 ```
