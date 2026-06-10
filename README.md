@@ -8,8 +8,8 @@ scikit-learn, and deployed on Streamlit Cloud.
 ## Results
 | Metric | Score |
 |-----------|--------|
-| Accuracy | XX.X% |
-| F1 Score | 0.XX |
+| Accuracy | 77.1% |
+| F1 Score | 0.78 |
 ![Confusion Matrix](<img width="900" height="750" alt="image" src="https://github.com/user-attachments/assets/1676762f-e5df-4400-a0f8-10997be76ee2" />
 )
 ## Tech Stack
