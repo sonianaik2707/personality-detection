@@ -10,7 +10,8 @@ scikit-learn, and deployed on Streamlit Cloud.
 |-----------|--------|
 | Accuracy | XX.X% |
 | F1 Score | 0.XX |
-![Confusion Matrix](data/confusion_matrix.png)
+![Confusion Matrix](<img width="900" height="750" alt="image" src="https://github.com/user-attachments/assets/1676762f-e5df-4400-a0f8-10997be76ee2" />
+)
 ## Tech Stack
 - Python, pandas, scikit-learn
 - TF-IDF vectorisation (5000 features, bigrams)
