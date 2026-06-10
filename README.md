@@ -1,6 +1,6 @@
 # Personality Detection — Introvert vs Extrovert
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](
-YOUR_STREAMLIT_LINK)
+[YOUR_STREAMLIT_LINK](https://personality-detection-bcsmog26e6uqc8t57xp3vc.streamlit.app/))
 ## Overview
 A real-time NLP classifier that predicts personality type
 (Introvert / Extrovert) from text input. Built with Python,
