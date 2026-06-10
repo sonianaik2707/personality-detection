@@ -26,6 +26,7 @@ def load_model():
         vectorizer = pickle.load(f)
 
     return model, vectorizer
+model, vectorizer = load_model()
 
 
 # Clean text
