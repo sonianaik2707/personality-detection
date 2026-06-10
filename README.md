@@ -32,13 +32,13 @@ streamlit run app.py # launches web app
 ## Project Structure
 ```
 personality-detection/
-■■■ app.py # Streamlit app
-■■■ src/
-| ■■■ preprocess.py # text cleaning
-| ■■■ train.py # model training + metrics
-■■■ data/
-| ■■■ model.pkl
-| ■■■ vectorizer.pkl
-| ■■■ confusion_matrix.png
-■■■ requirements.txt
+ app.py # Streamlit app
+ src/
+|  preprocess.py # text cleaning
+|  train.py # model training + metrics
+ data/
+|  model.pkl
+|  vectorizer.pkl
+|  confusion_matrix.png
+ requirements.txt
 ```
