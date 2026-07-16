@@ -14,10 +14,10 @@ st.set_page_config(
 # Load model and vectorizer
 @st.cache_resource
 def load_model():
-    base_dir = os.path.dirname(os.path.abspath(__file__))
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-    model_path = os.path.join(base_dir, "model.pkl")
-    vectorizer_path = os.path.join(base_dir, "vectorizer.pkl")
+    model_path = os.path.join(base_dir, "models", "model.pkl")
+    vectorizer_path = os.path.join(base_dir, "models", "vectorizer.pkl")
 
     with open(model_path, "rb") as f:
         model = pickle.load(f)
@@ -26,6 +26,8 @@ def load_model():
         vectorizer = pickle.load(f)
 
     return model, vectorizer
+
+
 model, vectorizer = load_model()
 
 
