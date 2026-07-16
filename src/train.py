@@ -87,12 +87,24 @@ def train_and_evaluate(csv_path, output_dir='.'):
     plt.xlabel('Predicted')
     plt.tight_layout()
 
-    cm_path = os.path.join(output_dir, 'confusion_matrix.png')
+
+    # CHANGED: Save confusion matrix inside images folder
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    image_dir = os.path.join(base_dir, "images")
+    os.makedirs(image_dir, exist_ok=True)
+
+    cm_path = os.path.join(image_dir, 'confusion_matrix.png')
+
 
     plt.savefig(cm_path, dpi=150)
     plt.close()
 
     print(f'Confusion matrix saved to {cm_path}')
+
+
+    # CHANGED: Ensure models folder exists
+    os.makedirs(output_dir, exist_ok=True)
+
 
     # Save model
     with open(os.path.join(output_dir, 'model.pkl'), 'wb') as f:
@@ -106,5 +118,21 @@ def train_and_evaluate(csv_path, output_dir='.'):
     return acc, f1, cm
 
 
+
 if __name__ == '__main__':
-    train_and_evaluate('../mbti_1.csv')
+
+    #  CHANGED: Use correct dataset and model folder paths
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+    csv_path = os.path.join(
+        base_dir,
+        "data",
+        "mbti_1.csv"
+    )
+
+    model_dir = os.path.join(
+        base_dir,
+        "models"
+    )
+
+    train_and_evaluate(csv_path, model_dir)
