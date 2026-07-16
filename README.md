@@ -12,7 +12,7 @@ scikit-learn, and deployed on Streamlit Cloud.
 |-----------|--------|
 | Accuracy | 77.1% |
 | F1 Score | 0.78 |
-![Confusion Matrix](src/confusion_matrix.png)
+![Confusion Matrix](images/confusion_matrix.png)
 ## Tech Stack
 - Python, pandas, scikit-learn
 - TF-IDF vectorisation (5000 features, bigrams)
@@ -25,11 +25,11 @@ MBTI Personality Type Dataset —
 Simplified to binary: Introvert (I*) vs Extrovert (E*).
 ## Run Locally
 ```bash
-git clone https://github.com/YOUR_USERNAME/personality-detection
+git clone https://github.com/sonianaik2707/personality-detection.git
 cd personality-detection
 pip install -r requirements.txt
-python src/train.py # trains and saves model
-streamlit run src/app.py # launches web app
+python src/train.py   # trains the model and saves model.pkl + vectorizer.pkl
+streamlit run src/app.py   # launches the Streamlit web app
 ```
 ## Project Structure
 ```
