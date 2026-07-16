@@ -34,16 +34,27 @@ streamlit run src/app.py # launches web app
 ## Project Structure
 ```
 personality-detection/
-```text
-personality-detection/
+├── data/
+│   └── mbti_1.csv
+│
+├── images/
+│   ├── class_dist.png
+│   └── confusion_matrix.png
+│
+├── models/
+│   ├── model.pkl
+│   └── vectorizer.pkl
+│
+├── notebooks/
+│   └── 01_eda.ipynb
+│
 ├── src/
 │   ├── app.py
 │   ├── preprocess.py
 │   ├── train.py
-│   ├── model.pkl
-│   ├── vectorizer.pkl
-│   └── confusion_matrix.png
+│   └── tf_idf_vectorization.py
+│
 ├── requirements.txt
-└── mbti_1.csv
+└── README.md
 ```
 ```
