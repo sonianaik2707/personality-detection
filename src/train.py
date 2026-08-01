@@ -120,19 +120,23 @@ def train_and_evaluate(csv_path, output_dir='.'):
 
 
 if __name__ == '__main__':
+<<<<<<< HEAD
 
-    #  CHANGED: Use correct dataset and model folder paths
+    # CHANGED: Use correct dataset and model folder paths
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
+    
     csv_path = os.path.join(
         base_dir,
         "data",
         "mbti_1.csv"
     )
-
+    
     model_dir = os.path.join(
         base_dir,
         "models"
     )
-
+    
     train_and_evaluate(csv_path, model_dir)
+=======
+    train_and_evaluate('../data/mbti_1.csv')
+>>>>>>> e75f00c (Updated csv path)
